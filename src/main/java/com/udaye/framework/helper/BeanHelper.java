@@ -12,6 +12,7 @@ import java.util.Set;
  * Created by chenlw on 16-8-4.
  */
 public class BeanHelper {
+    //Bean 类与 Bean 实例的映射关系。（Map类型）
     private static final Map<Class<?>, Object> BEAN_MAP = new HashMap<Class<?>, Object>();
 
     static {

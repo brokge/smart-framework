@@ -9,6 +9,7 @@ import java.lang.reflect.Field;
 import java.util.Map;
 
 /**
+ * 控制反转（inversion of Control）
  * 依赖注入助手类
  * <p>
  * Created by chenlw on 16-8-5.

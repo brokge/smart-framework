@@ -14,6 +14,7 @@ import java.util.Set;
 
 /**
  * 用于存放 请求与处理器的映射关系 （简称 Action Map）
+ * request 和 handler 之间的映射关系。
  * <p>
  * Created by chenlw on 16-8-5.
  */
@@ -38,7 +39,7 @@ public class ControllerHelper {
                             //从Action注解中获取 url 映射规则
                             Action action = method.getAnnotation(Action.class);
                             String mapping = action.value();
-                            //验证 URL 映射规则
+                            //验证 URL 映射规则 mapping 如： [post:path]
                             if (mapping.matches("\\w+:/||w*")) {
                                 String[] array = mapping.split(":");
                                 if (ArrayUtil.isNotEmpty(array) && array.length == 2) {
